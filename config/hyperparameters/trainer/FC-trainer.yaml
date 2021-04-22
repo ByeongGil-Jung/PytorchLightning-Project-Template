@@ -1,0 +1,15 @@
+logger: "tensor_board"
+callbacks:
+  - "status_listener_callback"
+  - "early_stopping_callback"
+is_auto_lr_find: true
+max_epochs: 10
+
+# Device
+gpus: 1
+
+# Early stopping
+early_stopping_monitor: "val_loss"
+early_stopping_patience: 3
+early_stopping_mode: "min"
+early_stopping_strict: true

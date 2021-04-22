@@ -1,0 +1,7 @@
+lr: 0.001
+hidden_dim: 128
+optimizer: "adam"
+
+# lr scheduler
+lr_scheduler: "cosine_anealing_warm_restart"
+T_0: 10
